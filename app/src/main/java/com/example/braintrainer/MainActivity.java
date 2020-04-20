@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         scoreText.setText(score + "/" + numberOfQ);
         newQuestion();
         timeText.setText("30s");
-        new CountDownTimer(5100, 1000) {
+        new CountDownTimer(30100, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 timeText.setText(String.valueOf(millisUntilFinished / 1000) + "s");
